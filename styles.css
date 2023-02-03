@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("images/bg-intro-desktop.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsla(0, 100%, 74%);
+  background-blend-mode: multiply;
+  display: grid;
+  min-height: 100vh;
+  inset: 0;
+}
+
+main {
+  width: 77.08333333333333vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-family: sans-serif;
+}
+
+.hero {
+  display: grid;
+  place-content: center;
+  color: white;
+}
+
+.hero__title {
+  font-size: 2.25rem;
+  font-weight: 900;
+}
+
+.hero__article {
+  margin-top: 1.5625rem;
+}
+
+.form__free-trial {
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+  text-align: center;
+  padding-block: 4.187604690117253vh;
+  border-radius: 10px;
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.form__free-trial span {
+  font-weight: 700;
+}
+
+form {
+  background-color: white;
+  display: grid;
+  padding: 2.5rem;
+  margin-top: 1.5625rem;
+  border-radius: 10px;
+}
+
+form input {
+  padding: 0.9375rem;
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  border: 1px solid hsl(246, 25%, 77%);
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid hsl(249, 10%, 26%);
+}
+
+form button {
+  padding-block: 0.9375rem;
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: hsl(154, 100%, 64%);
+}
+
+form input:not(:first-child),
+form button {
+  margin-top: 4.187604690117253vh;
+}
+
+.form__terms-and-service {
+  font-size: 0.75rem;
+  text-align: center;
+  color: hsl(246, 25%, 77%);
+  margin-top: 0.9375rem;
+}
+
+.form__terms-and-service span {
+  color: hsl(0, 100%, 74%);
+}
+
+.error {
+  font-size: 12px;
+  text-align: end;
+  font-style: italic;
+  color: hsl(0, 100%, 74%);
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 2000px) {
+  .hero__title {
+    font-size: 3rem;
+  }
+
+  .hero__article {
+    font-size: 2rem;
+  }
+
+  form {
+    padding: 5rem;
+  }
+
+  .form__free-trial {
+    font-size: 2rem;
+    padding-block: 2.5rem;
+  }
+
+  form input,
+  form button {
+    font-size: 2rem;
+  }
+
+  .form__terms-and-service {
+    font-size: 1.75rem;
+  }
+
+  form input {
+    background-size: 40px;
+  }
+
+  form button {
+    padding-block: 1.875rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-block: 9.29368029739777vh;
+  }
+
+  main {
+    width: 87.2vw;
+    grid-template-columns: 100%;
+  }
+
+  br {
+    display: none;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 1.25rem;
+  }
+
+  .hero__title br {
+    display: block;
+  }
+
+  .hero__article {
+    font-size: 1rem;
+  }
+
+  .form__free-trial {
+    margin-top: 2.1875rem;
+    font-size: 0.875rem;
+  }
+}

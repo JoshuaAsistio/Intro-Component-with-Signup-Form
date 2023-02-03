@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.1/redux.min.js"
+      integrity="sha512-1/8Tj23BRrWnKZXeBruk6wTnsMJbi/lJsk9bsRgVwb6j5q39n0A00gFjbCTaDo5l5XrPVv4DZXftrJExhRF/Ug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="hero">
+        <h1 class="hero__title">
+          Learn to code by
+          <br />
+          watching others
+        </h1>
+
+        <article class="hero__article">
+          See how experienced developers solve problems in real-time.
+          <br />
+          Watching scripted tutorials is great, but understanding how
+          <br />
+          developers think is invaluable.
+        </article>
+      </div>
+
+      <div>
+        <div class="form__free-trial">
+          <p><span>Try it free 7 days </span>then $20/mo. thereafter</p>
+        </div>
+
+        <form action="#" id="form" onsubmit="h">
+          <input type="text" placeholder="First Name" />
+          <p class="error"></p>
+
+          <input type="text" placeholder="Last Name" />
+          <p class="error"></p>
+
+          <input type="email" placeholder="Email Address" />
+          <p class="error"></p>
+
+          <input type="password" placeholder="Password" />
+          <p class="error"></p>
+
+          <button type="submit">CLAIM YOUR FREE TRIAL</button>
+
+          <p class="form__terms-and-service">
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>
+          </p>
+        </form>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
